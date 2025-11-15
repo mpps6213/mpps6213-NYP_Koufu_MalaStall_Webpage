@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        article{
+            width: 80%;
+            font-size: 1.3em;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            margin: 20px auto 20px auto;
+            
+        }
+
+        article img{
+            width: 45%;
+            height: 400px;
+            float: left;
+            margin: 10px;
+            border: 5px groove rgb(59, 8, 8);
+            border-radius: 30px;
+        }
+        p{
+            padding: 10px;
+        }
+        
+        .noFloat{
+            clear: both;
+        }
+        span{
+            font-variant: small-caps;
+        }
+        section{
+            padding: 20px;
+            margin: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+        #social{
+            
+            flex: 1;
+        }
+        #social img{
+            width: 50px;
+            height: 50px;
+            border: 5px inset rgb(59, 8, 8);
+            border-radius: 20px;
+        }
+        #social img:hover{
+            width: 60px;
+            height: 60px;
+        }
+        #social p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.2em;
+        }
+        #social a:visited{
+            color: blue;
+        }
+        #social a:hover{
+            color: rgb(59, 8, 8);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul id="img-nav">
+                <li id="Koufu"><a href="https://www.koufu.com.sg/" target="_blank"><img src="images/Koufu.png" alt="Koufu" title="Koufu"></a></li>
+                <li id="NYP"><a href="http://nyp.edu.sg" target="_blank"><img src="images/NYP.jpg" alt="NYP" title="Nanyang Polytechnic (NYP)"></a></li>
+            </ul>
+            <ul id="link-nav">
+                <li><a href="index.html" title="Go to Home Page">Home</a></li>
+                <li><a href="menu.html" title="Go to Menu Page">Menu</a></li>
+                <li><a href="order.html" title="Go to Order Page">Order</a></li>
+                <li><a href="aboutUs.html" title="Go to About Us Page">About Us</a></li>
+                <li><a href="member.html" title="Go to Membership Page">Member</a></li>
+            </ul>
+        </nav>
+        <article>
+            <img src="images/malaXiangGuo_Aboutus.jpg" alt="About Us Image" title="Mala Image">
+            <p>We believe that delicious and nutritious food should be an essential part of every student's day.
+                We're excited to bring the vibrant flavors of Mala to the NYP canteen, offering a customizable and exciting meal 
+                option that will keep you energized and focused.
+            </p>
+            <p> We understand that students have diverse tastes and dietary needs, so we've created a build-your-own-bowl concept that
+                puts you in charge. Choose from a variety of fresh vegetables, lean proteins, and different types of noodles. 
+                Whether you're a vegetarian, a meat-lover, or have specific dietary restrictions, you can create a Mala bowl that's prefect
+                for you.
+            </p>
+            <p class="noFloat">
+                Our signature Mala sauce and soup is made with a blend of aromatic spices and Sichuan peppercorns, providing a delicious
+                kick without being overly spicy (we can adjust the spice level to your preference!). 
+                We're committed to using high-quality ingredients and preparing everything fresh daily, ensuring a tasty and wholesome meal.
+            </p>
+            <p class="noFloat">
+                At <span>NYP Koufu Mala Hotpot</span>, we're passionate about providing a quick, affordable, and satisfying meal option for students. 
+                We know you're busy with classes and activities, so we strive to serve you efficiently without compromsing on quality of flavor.
+            </p>
+            <p class="noFloat">
+                Come visit us at the <span>NYP Koufu</span> and discover your new favourite lunch spot!
+                We're confident you'll love the taste and the flexibility of our Mala bowls.
+            </p>
+        </article>
+        <section>
+            <div id="social">
+                <p>Located in: <a href="http://www.nyp.edu.sg">Nanyang Polytechnic</a><br></p>
+                <p>Hours: Mon-Fri(7:30am-6:30pm)</p>    
+                <p>Phone: 6455 5421</p>
+                <p>Email: <a href="mailto:nypkoufumalahotpot@email.com">nypkoufumalahotpot@email.com</a></p>    
+
+                <br>
+                <p>Follow Us</p>
+                <a href="http://www.facebook.com"><img src="images/facebookLogo.png" alt="facebook" title="facebook"></a>
+                <a href="http://www.instagram.com"><img src="images/instagramLogo.jpg" alt="instagram" title="instagram"></a>
+                <a href="http://www.x.com"><img src="images/x.jpg" alt="x" title="x"></a>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.661499816625!2d103.84640277458676!3d1.3797631986071874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16eb64b0249d%3A0x515ce96c0f530fd4!2sKoufu!5e0!3m2!1sen!2ssg!4v1738570589377!5m2!1sen!2ssg" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <footer>
+            <div id="footer-nav">
+                <p><a href="http://nyp.edu.sg" target="_blank">Nanyang Polytechnic</a></p>
+                <p><a href="https://www.koufu.com.sg/" target="_blank">Koufu</a></p>
+                
+                <!--flex like apple footer-->
+            </div> 
+
+            <div  id="copyright">
+                <p>COPYRIGHT&copy;2025 ALL RIGHTS RESERVED BY NYP KOUFU</p>
+                <p>MyaPhuPwintSoe243843G</p>
+                <!--copyright-->
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
