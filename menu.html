@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        main{
+            text-align: center;
+        }
+        @media screen and (max-width: 800px) and (min-width: 600px){
+        main{
+            width: 600px;
+            min-height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 24px;
+        }
+        }
+        .flex{
+        
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        .image img{
+            width: 70%;
+            height: 60%;
+            border: 5px rgb(59, 8, 8) inset;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: transform 0.2s;
+            
+        }
+        .image{
+            flex: 1;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px 0 rgb(127, 127, 127);
+    
+        }
+        .image img:hover{
+            transform: scale(1.05);
+        }
+
+        h1{
+            
+            background-color: rgb(59, 8, 8);
+            color: rgb(235, 173, 173);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            margin: 20px;
+            margin-left: 40%;
+            margin-right: 40%;
+            border: 5px dashed rgb(235, 173, 173);
+            border-radius: 30px;
+        }
+        h2{
+            background-color: rgb(235, 173, 173);
+            color: rgb(70, 27, 27);
+            font-family: cursive;
+            padding: 10px;
+            margin: 10px;
+        }
+        .break{
+            background-color: rgb(235, 173, 173);
+            padding: 5px;
+        }
+        .item{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(59, 8, 8);
+            font-size: 1.5em;
+            background-color: rgb(235, 173, 173);
+            padding: 5px;
+            margin: 5px;
+        }
+        .delete{
+            color: red;
+            font-size: 1.2em;
+            text-decoration: line-through;
+        }
+        .price{
+            font-size: 1.3em;
+            color: rgb(113, 186, 12);
+            font-weight: bold;
+        }
+        .flex a{
+            text-decoration: none;
+            color: rgb(59, 8, 8);
+        }
+        .flex a:hover{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul id="img-nav">
+                <li id="Koufu"><a href="https://www.koufu.com.sg/" target="_blank"><img src="images/Koufu.png" alt="Koufu" title="Koufu"></a></li>
+                <li id="NYP"><a href="http://nyp.edu.sg" target="_blank"><img src="images/NYP.jpg" alt="NYP" title="Nanyang Polytechnic (NYP)"></a></li>
+            </ul>
+            <ul id="link-nav">
+                <li><a href="index.html" title="Go to Home Page">Home</a></li>
+                <li><a href="menu.html" title="Go to Menu Page">Menu</a></li>
+                <li><a href="order.html" title="Go to Order Page">Order</a></li>
+                <li><a href="aboutUs.html" title="Go to About Us Page">About Us</a></li>
+                <li><a href="member.html" title="Go to Membership Page">Member</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1>MENU</h1>
+            <div>
+                <h2>Mala Hot Pot</h2>
+                <section class="flex">
+                    <div class="image">
+                        <a href="order.html#vege" title="click here to order"><img src="images/vegetables.png" alt="vegetables"></a>
+                        <p class="item"><a href="order.html#vege" title="click here to order">Vegetable</a></p>
+                        <p class="delete">&dollar;1.20 / 100g</p>
+                        <p class="price">&dollar;1.00 / 100g</p>
+
+                    </div>
+                    <div class="image">
+                        <a href="order.html#mushroom" title="click here to order"><img src="images/mushrooms.png" alt="mushrooms"></a>
+                        <p class="item"><a href="order.html#mushroom" title="click here to order">Mushroom</a></p>
+                        <p class="delete">&dollar;1.40 / 100g</p>
+                        <p class="price">&dollar;1.20 / 100g</p>
+
+
+                    </div>
+                    
+                </section>
+                <section class="flex">
+                    <div class="image">
+                        <a href="order.html#meat" title="click here to order"><img src="images/meat.jpg" alt="meat"></a>
+                        <p class="item"><a href="order.html#meat" title="click here to order">Meat</a></p>
+                        <p class="delete">&dollar;2.20 / 100g</p>
+                        <p class="price">&dollar;2.00 / 100g</p>
+
+
+                    </div>
+                    <div class="image">
+                        <a href="order.html#beef" title="click here to order"><img src="images/seafood.jpg" alt="seafood"></a>
+                        <p class="item"><a href="order.html#beef" title="click here to order">Beef/SeaFood</a></p>
+                        <p class="delete">&dollar;2.20 / 100g</p>
+                        <p class="price">&dollar;2.00 / 100g</p>
+
+
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Set Meal</h2>
+                <section class="flex">
+                    <div class="image">
+                        <a href="order.html#set" title="click here to order"><img src="images/setmeal.jpg" alt="setmeal for 1-2pax"></a>
+                        <p class="item"><a href="order.html#set" title="click here to order">Set Meal for 1-2 Pax</a></p>
+                        <p class="price">&dollar;7.00</p>
+
+
+                    </div>
+                    <div class="image">
+                        <a href="order.html#set" title="click here to order"><img src="images/setmeal.jpg" alt="setmeal for 3-4pax"></a>
+                        <p class="item"><a href="order.html#set" title="click here to order">Set Meal for 3-4 Pax</a></p>
+                        <p class="price">&dollar;14.00</p>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Others</h2>
+                <section class="flex">
+                    <div class="image">
+                        <a href="order.html#others" title="click here to order"><img src="images/stir-fry_french_bean.jpg" alt="stir-fry french bean"></a>
+                        <p class="item"><a href="order.html#others" title="click here to order">Stir-Fry French Bean</a></p>
+                        <p class="price">&dollar;4.50</p>
+
+                    </div>
+                    <div class="image">
+                        <a href="order.html#others" title="click here to order"><img src="images/hot_and_spicy_potato.jpg" alt="hot and spicy potato slices"></a>
+                        <p class="item"><a href="order.html#others" title="click here to order">Hot &amp; Spicy Potato Slices</a></p>
+                        <p class="price">&dollar;4.50</p>
+
+                    </div>
+                </section>
+                <section class="flex">
+                    <div class="image">
+                        <a href="order.html#others" title="click here to order"><img src="images/rice.jpg" alt="rice"></a>
+                        <p class="item"><a href="order.html#others" title="click here to order">Plain Rice</a></p>
+                        <p class="price">&dollar;+0.50</p>
+
+                    </div>
+                    <div class="image">
+                        <a href="order.html#others" title="click here to order"><img src="images/takeaway.jpg" alt="takeaway"></a>
+                        <p class="item"><a href="order.html#others" title="click here to order">Takeaway</a></p>
+                        <p class="price">&dollar;+0.20</p>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="break"><br></div>
+        <footer>
+            <div id="footer-nav">
+                <p><a href="http://nyp.edu.sg" target="_blank">Nanyang Polytechnic</a></p>
+                <p><a href="https://www.koufu.com.sg/" target="_blank">Koufu</a></p>
+                
+                <!--flex like apple footer-->
+            </div> 
+
+            <div  id="copyright">
+                <p>COPYRIGHT&copy;2025 ALL RIGHTS RESERVED BY NYP KOUFU</p>
+                <p>MyaPhuPwintSoe243843G</p>
+                <!--copyright-->
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

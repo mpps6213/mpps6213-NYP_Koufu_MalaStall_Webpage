@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        fieldset{
+            width: 60%;
+            
+            padding: 20px;
+            margin: 20px auto 20px auto;
+            text-align: center;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(235, 173, 173);
+            border: 5px dotted rgb(59, 8, 8);
+            border-radius: 30px;
+            
+        }
+        legend{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 20px;
+            border: 7px double rgb(235, 173, 173);
+            border-radius: 20px;
+            background-color: rgb(59, 8, 8);
+            color: rgb(235, 173, 173);
+        }
+        span{
+            color: red;
+        }
+        input, textarea, select{
+            background-color: rgb(243, 212, 212);
+            border: 3px double rgb(59, 8, 8);
+            color:rgb(59, 8, 8);
+            font-weight: bold;
+        }
+        
+        .flex{
+            display: flex;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+        .flex label{
+            width: 320px;
+            text-align: end;
+            margin: 0 20px;
+        }
+        .length input{
+            width: 300px;
+            padding: 3px;
+        }
+    
+        button{
+            font-size: 1.1em;
+            font-weight: bold;
+            color: rgb(255, 240, 221);
+            background-color: rgb(59, 8, 8);
+            border: 3px outset rgb(59, 8, 8);
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+        button:hover{
+            background-color: rgb(235, 173, 173);
+            color: rgb(59, 8, 8);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul id="img-nav">
+                <li id="Koufu"><a href="https://www.koufu.com.sg/" target="_blank"><img src="images/Koufu.png" alt="Koufu" title="Koufu"></a></li>
+                <li id="NYP"><a href="http://nyp.edu.sg" target="_blank"><img src="images/NYP.jpg" alt="NYP" title="Nanyang Polytechnic (NYP)"></a></li>
+            </ul>
+            <ul id="link-nav">
+                <li><a href="index.html" title="Go to Home Page">Home</a></li>
+                <li><a href="menu.html" title="Go to Menu Page">Menu</a></li>
+                <li><a href="order.html" title="Go to Order Page">Order</a></li>
+                <li><a href="aboutUs.html" title="Go to About Us Page">About Us</a></li>
+                <li><a href="member.html" title="Go to Membership Page">Member</a></li>
+            </ul>
+        </nav>
+        <section>
+            
+            <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" >
+                <fieldset>
+                    <legend>Member Registration</legend>
+                    <div class="flex length">
+                        <label><span>*</span>Login ID(username):</label>
+                        <input name="loginID" type="text" required="required" placeholder="Type you Login Id(username) here">
+                    </div>
+                    <div class="flex length">
+                        <label><span>*</span>Full Name:</label>
+                        <input name="studName" type="text" pattern="[A-Za-z\s]{5,50}" required="required"
+                        title="Between 5 to 50 characters only" placeholder="Type you full name here">
+                    </div>
+                    <div class="flex length">
+                        <label><span>*</span>Password</label>
+                        <input name="password" type="text" pattern="[A-Za-z0-9]{16,50}" required="required"
+                        title="Minimum 16 characters" placeholder="Type you password here">
+                    </div>
+                    <div class="flex length">
+                        <label><span>*</span>Telephone number:</label>
+                        <input name="Telephone" type="tel" pattern="[0-9]{8}" placeholder="Type your ph no here" required="required"
+                        title="Please enter phone number as 8-digit numbers only">
+                    </div>
+                    
+                    <div class="flex">
+                        <label><span>*</span>Gender:</label>
+                        <input name="gender" type="radio" value="M" required="required">Male
+                        <input name="gender" type="radio" value="F" checked>Female
+                    </div>
+                    
+                    
+                    <div class="flex length">
+                        <label><span>*</span>Email address:</label>
+                        <input name="email" type="email" size="50"
+                         placeholder="Type your email address here">
+                    </div>
+                    <div class="flex">
+                        <label><span>*</span>Physical Address:</label>
+                        <textarea name="address" rows="3" cols="40" required
+                        placeholder="Your Home Address"></textarea>
+                    </div>
+                    <div class="flex">
+                        <label>Favourite Food(optional):</label>
+                        <select name="favourite Food">
+                            <option value="1">Mala Xiang Guo</option>
+                            <option value="2">Mala Tang</option>
+                            <option value="3">Set Meal</option>
+                            <option value="4">Stir-fry French Bean</option>
+                            <option value="4">Hot & Spicy Potato Slices</option>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        <button type="submit">
+                            Login
+                        </button>
+                        <button type="reset">
+                            Clear
+                        </button>
+                    </div>
+                </fieldset>
+
+            </form>
+        </section>
+        <footer>
+            <div id="footer-nav">
+                <p><a href="http://nyp.edu.sg" target="_blank">Nanyang Polytechnic</a></p>
+                <p><a href="https://www.koufu.com.sg/" target="_blank">Koufu</a></p>
+                
+                <!--flex like apple footer-->
+            </div> 
+
+            <div  id="copyright">
+                <p>COPYRIGHT&copy;2025 ALL RIGHTS RESERVED BY NYP KOUFU</p>
+                <p>MyaPhuPwintSoe243843G</p>
+                <!--copyright-->
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
